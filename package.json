@@ -1,0 +1,22 @@
+{
+  "name": "roadseats",
+  "version": "1.0.0",
+  "description": "find your favorite team's closest games to different locations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcele/roadseats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcele/roadseats/issues"
+  },
+  "homepage": "https://github.com/arcele/roadseats#readme",
+  "dependencies": {
+    "lokijs": "^1.5.0"
+  }
+}
