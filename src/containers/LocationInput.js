@@ -9,7 +9,7 @@ let LocationInput = ({ dispatch }) => {
 			<select ref={node => { input = node }}
 				onChange={ e => {
 					e.preventDefault()
-					if(input.value == -1) {
+					if(input.value === -1) {
 						return false
 					}
 					console.log('chooseLocation >', input.value)
