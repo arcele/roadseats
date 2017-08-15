@@ -5,11 +5,11 @@ function parseCoordinates(xyString) {
 	if(splitString.length == 2) {
 		xyObject = {
 			latitude : {
-				radians: splitString[0].slice(0,splitString[0].length-1),
+				radians: splitString[0].slice(0,splitString[0].length-1) / 180 * Math.PI,
 				direction: splitString[0].slice(-1)
 			},
 			longitude: {
-				radians: splitString[1].slice(0,splitString[1].length-1),
+				radians: splitString[1].slice(0,splitString[1].length-1) / 180 * Math.PI,
 				direction: splitString[1].slice(-1)
 			}
 		}
