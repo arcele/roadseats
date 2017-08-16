@@ -17,9 +17,11 @@ function parseCoordinates(xyString) {
 	return xyObject;
 }
 
-export const chooseTeam = (teamLocation) => ({
+export const chooseTeam = (teamId) => ({
+	// once a team is chosen, we need to parse the schedule for all stadiums that they'll play at
+	// and set the teamLocation
 	type: 'TEAM_CHOSEN',
-	teamLocation: parseCoordinates(teamLocation)
+	teamId: teamId
 })
 
 export const chooseLocation = (searchCoordinates) => ({

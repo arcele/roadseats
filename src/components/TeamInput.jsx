@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { chooseTeam } from '../actions'
+import { teams } from '../data/teams'
 
 class TeamInput extends Component {
+
 	render() {
 		let input
+		console.log(teams)
 		return (
 			<div>
 				<form>
@@ -18,9 +21,9 @@ class TeamInput extends Component {
 							this.props.dispatch(chooseTeam(input.value))
 						}}>
 						<option value="-1"> -- Your Team --</option>
-						<option value="33.75528N,84.40099W">Atlanta Falcons</option>
-						<option value="42.77378N,78.78695W">Buffalo Bills</option>
-						<option value="39.900496398N,75.167165998W">Philadelphia Eagles</option>
+						{Object.keys(teams).map(teamId => (
+							<option key={teamId} value={teamId}>{teams[teamId].location} {teams[teamId].name}</option>
+						))}	
 					</select>
 				</form>
 			</div>
