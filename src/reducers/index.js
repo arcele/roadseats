@@ -4,7 +4,7 @@ const red = (state = { }, action) => {
 	switch(action.type) {
 		case 'TEAM_CHOSEN': 
 			return Object.assign({}, state, {
-				teamId: action.teamId
+				team: action.team
 			})
 		case 'LOCATION_CHOSEN':
 			return Object.assign({}, state, {

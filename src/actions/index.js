@@ -1,3 +1,5 @@
+import { teams } from '../data/teams'
+
 function parseCoordinates(xyString) {
 	// turn coordinates in string format '47.61W,122.33N' into coordinate object
 	let xyObject = {}
@@ -17,12 +19,13 @@ function parseCoordinates(xyString) {
 	return xyObject;
 }
 
-export const chooseTeam = (teamId) => ({
-	// once a team is chosen, we need to parse the schedule for all stadiums that they'll play at
-	// and set the teamLocation
-	type: 'TEAM_CHOSEN',
-	teamId: teamId
-})
+export const chooseTeam = (teamId) => {
+	const team = teams[teamId]
+	return {
+		type: 'TEAM_CHOSEN',
+		team: team
+	}
+}
 
 export const chooseLocation = (searchCoordinates) => ({
 	type: 'LOCATION_CHOSEN',

@@ -17,7 +17,6 @@ class TeamInput extends Component {
 							if(input.value === -1) {
 								return
 							}
-							console.log('chooseTeam ->', input.value)
 							this.props.dispatch(chooseTeam(input.value))
 						}}>
 						<option value="-1"> -- Your Team --</option>
