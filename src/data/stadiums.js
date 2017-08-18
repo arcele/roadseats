@@ -1,7 +1,7 @@
 const stadiums = {
 	"1": {teamId: 1, name:"Mercedes Benz Stadium", city: "Atlanta, Georgia", location: "33.75528N,84.40099W"},
 	"2": {teamId: 2, name:"New Era Stadium", city: "Something Orchard, NY", location: "42.77378N,78.78695W"},
-	"3": {teamId: 3, name:"Soldier Field", city: "Chicago, IL", location: "41.8623° N, 87.6167° W"},
+	"3": {teamId: 3, name:"Soldier Field", city: "Chicago, IL", location: "41.8623N,87.6167W"},
 	"4": {teamId: 4, name:"Paul Brown Stadium", city: "Cincinatti, OH", location:"39.0955N,84.5161W" },
 	"5": {teamId: 5, name:"First Energy Stadium", city: "Cleveland, OH", location:"41.5061N,81.6995W"},
 	"6": {teamId: 6, name:"AT&T Stadium", city: "Arlington, TX", location: "32.7473N,97.0945W"},
