@@ -31,8 +31,5 @@ const stadiums = {
 	"30": {teamId:30, name: "EverBank Field", city: "Jacksonville, FL", location: "30.3239N,81.6373W"},
 	"31": {teamId:33, name: "M&T Bank Stadium", city: "Baltimore, MD", location: "39.2780N,76.6227W"},
 	"32": {teamId:34, name: "NRG Stadium", city: "Houston, TX", location: "29.6847N,95.4107W"}
-
-
-
 }
 module.exports = { stadiums }

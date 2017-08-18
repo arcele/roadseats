@@ -12,6 +12,7 @@ class Results extends Component  {
 
 	getStadiumByMatchup(matchup) {
 		let stadium = null
+		
 		Object.keys(stadiums).map( (stadiumId) => {
 			if(stadiums[stadiumId].teamId == matchup.homeProTeamId) {
 				stadium = stadiums[stadiumId]
@@ -30,16 +31,14 @@ class Results extends Component  {
 				if(stadium) {
 					distance = this.getDistance(parseCoordinates(stadium.location), this.props.searchLocation)
 					let matchesKey = parseFloat(distance.split(' ')[0])
+					let match = Object.assign({stadium: stadium}, matchup)
 					if(matchesKey in matches) {
-						matches[matchesKey].push(matchup)
+						matches[matchesKey].push(match)
 					} else {
-						matches[matchesKey] = new Array(matchup)
+						matches[matchesKey] = new Array(match)
 					}
-				} else {
-					console.log('Ain\'t no stadium for:', matchup)
 				}
 			})	
-			console.log('matches:', matches)
 		}
 		return matches
 	}
@@ -57,11 +56,10 @@ class Results extends Component  {
 	
 	render() {
 		const results = this.searchSchedule(), resultKeys = Object.keys(results).sort(function(a,b){return a-b})
-
 		return(
 			<div>
 				{ resultKeys.map( distance => (
-					<p>{results[distance].length} Events {distance} kms away</p> 
+					<p>{results[distance].length} Events {distance} kms away at {results[distance][0].stadium.name}	</p> 
 				) ) }
 			</div>
 		)
