@@ -7,7 +7,7 @@ class TeamInput extends Component {
 
 	render() {
 		let input
-		console.log(teams)
+		const sortedTeamIndexes = Object.keys(teams).sort(function(a,b) { return (teams[a].location > teams[b].location) ? 1 : -1 })
 		return (
 			<div>
 				<form>
@@ -20,7 +20,7 @@ class TeamInput extends Component {
 							this.props.dispatch(chooseTeam(input.value))
 						}}>
 						<option value="-1"> -- Your Team --</option>
-						{Object.keys(teams).map(teamId => (
+						{sortedTeamIndexes.map(teamId => (
 							<option key={teamId} value={teamId}>{teams[teamId].location} {teams[teamId].name}</option>
 						))}	
 					</select>
