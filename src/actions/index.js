@@ -1,6 +1,6 @@
 import { teams } from '../data/teams'
 
-function parseCoordinates(xyString) {
+export function parseCoordinates(xyString) {
 	// turn coordinates in string format '47.61W,122.33N' into coordinate object
 	let xyObject = {}
 	const splitString = xyString.split(',')
