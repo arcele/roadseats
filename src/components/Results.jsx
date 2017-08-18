@@ -59,7 +59,7 @@ class Results extends Component  {
 		return(
 			<div>
 				{ resultKeys.map( distance => (
-					<p>{results[distance].length} Events {distance} kms away at {results[distance][0].stadium.name}	</p> 
+					<p>{results[distance].length} Events {distance} kms away at {results[distance][0].stadium.name}	in {results[distance][0].stadium.city}</p> 
 				) ) }
 			</div>
 		)
