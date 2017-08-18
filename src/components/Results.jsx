@@ -56,7 +56,7 @@ class Results extends Component  {
 	}
 	
 	render() {
-		const results = this.searchSchedule(), resultKeys = Object.keys(results).sort()
+		const results = this.searchSchedule(), resultKeys = Object.keys(results).sort(function(a,b){return a-b})
 
 		return(
 			<div>
