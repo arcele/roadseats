@@ -30,7 +30,7 @@ class Results extends Component  {
 				if(stadium) {
 					distance = this.getDistance(parseCoordinates(stadium.location), this.props.searchLocation)
 					let matchesKey = parseFloat(distance.split(' ')[0])
-					if(distance in matches) {
+					if(matchesKey in matches) {
 						matches[matchesKey].push(stadium)
 					} else {
 						matches[matchesKey] = new Array(stadium)
