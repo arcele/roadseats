@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { stadiums } from '../data/stadiums'
 import { parseCoordinates } from '../actions/index'
+import dateFormat from 'dateformat'
 
 
 class Results extends Component  {
@@ -57,11 +58,20 @@ class Results extends Component  {
 	render() {
 		const results = this.searchSchedule(), resultKeys = Object.keys(results).sort(function(a,b){return a-b})
 		return(
-			<div>
+			<ul>
 				{ resultKeys.map( distance => (
-					<p>{results[distance].length} Events {distance} kms away at {results[distance][0].stadium.name}	in {results[distance][0].stadium.city}</p> 
+					<li>
+						{results[distance].length} Events {distance} kms away 
+						at {results[distance][0].stadium.name} in {results[distance][0].stadium.city}
+						<ul>
+						{ results[distance].map( idx => (
+								<li>{dateFormat(Date.parse(idx.gameDate), "dddd, mmmm dS, yyyy, h:MM:ss TT")}</li>
+							) )
+						}
+						</ul>
+					</li> 
 				) ) }
-			</div>
+			</ul>
 		)
 	}
 }
