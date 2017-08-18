@@ -31,18 +31,17 @@ class Results extends Component  {
 					distance = this.getDistance(parseCoordinates(stadium.location), this.props.searchLocation)
 					let matchesKey = parseFloat(distance.split(' ')[0])
 					if(matchesKey in matches) {
-						matches[matchesKey].push(stadium)
+						matches[matchesKey].push(matchup)
 					} else {
-						matches[matchesKey] = new Array(stadium)
+						matches[matchesKey] = new Array(matchup)
 					}
 				} else {
 					console.log('Ain\'t no stadium for:', matchup)
 				}
 			})	
 			console.log('matches:', matches)
-			return 'dope!'
 		}
-		return 'nah'
+		return matches
 	}
 
 	getDistance(loc1, loc2) {
@@ -57,9 +56,13 @@ class Results extends Component  {
 	}
 	
 	render() {
+		const results = this.searchSchedule(), resultKeys = Object.keys(results).sort()
+
 		return(
 			<div>
-				{ this.searchSchedule() }
+				{ resultKeys.map( distance => (
+					<p>{results[distance].length} Events {distance} kms away</p> 
+				) ) }
 			</div>
 		)
 	}
