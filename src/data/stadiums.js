@@ -13,25 +13,24 @@ const stadiums = {
 	"12": {teamId:12, name: "Arrowhead Stadium", city: "Kansas City, MO", location:"39.042666496N,94.483664732W"},
 	"13": {teamId:13, name: "O.co", city: "Oakland, CA", location:"37.750996996N,122.200332532W"},
 	"14": {teamId:14, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-// if every body else moved to LA
-	"15": {teamId:15, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"16": {teamId:16, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"17": {teamId:17, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"18": {teamId:18, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"19": {teamId:19, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"20": {teamId:20, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"21": {teamId:21, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"22": {teamId:22, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"23": {teamId:23, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"24": {teamId:24, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"25": {teamId:25, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"26": {teamId:26, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"27": {teamId:27, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"28": {teamId:28, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"29": {teamId:29, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"30": {teamId:30, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"31": {teamId:33, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"},
-	"32": {teamId:34, name: "LA Col", city: "Los Angeles, CA", location: "34.008499966N,118.285998856W"}
+	"15": {teamId:15, name: "Hard Rock Stadium", city: "Miami Gardens, FL", location: "25.9580N,80.2389W"},
+	"16": {teamId:16, name: "US Bank Stadium", city: "Minneapolis, MN", location: "44.9736N, 93.2573W"},
+	"17": {teamId:17, name: "Gilette Stadium", city: "Foxboro, MA", location: "42.0909N,71.2643W"},
+	"18": {teamId:18, name: "Mercedes Benz Superdome", city: "Los Angeles, CA", location: "29.9511N,90.0812W"},
+	"19": {teamId:19, name: "Metlife Stadium", city: "East Rutherford, NJ", location: "40.8128N,74.0742W"},
+	"20": {teamId:20, name: "Metlife Stadium", city: "East Rutherford, NJ", location: "40.8128N,74.0742W"}, // shut up
+	"21": {teamId:21, name: "Lincoln Financial Field", city: "Los Angeles, CA", location: "39.9008N,75.1675W"},
+	"22": {teamId:22, name: "Univ of Phoneix Stadium", city: "Glendale, AZ", location: "33.5276N,112.2626W"},
+	"23": {teamId:23, name: "Heinz Field", city: "Pittsburgh, PA", location: "40.4468N,80.0158W"},
+	"24": {teamId:24, name: "Stubhub Center", city: "Carson CA", location: "33.8644,118.2611W"},
+	"25": {teamId:25, name: "Levi Stadium", city: "Santa Clara, CA", location: "37.4032,121.9698W"},
+	"26": {teamId:26, name: "Century Link Field", city: "Seattle, WA", location: "47.5952N,122.3316W"},
+	"27": {teamId:27, name: "Raymond James Stadium", city: "Tampa, FL", location: "27.9759N,82.5033W"},
+	"28": {teamId:28, name: "FedEx Field", city: "Hyattsville, MD", location: "38.9076N,76.8645W"},
+	"29": {teamId:29, name: "Bank Of America Stadium", city: "Charlotte, NC", location: "35.2258N,80.8528W"},
+	"30": {teamId:30, name: "EverBank Field", city: "Jacksonville, FL", location: "30.3239N,81.6373W"},
+	"31": {teamId:33, name: "M&T Bank Stadium", city: "Baltimore, MD", location: "39.2780N,76.6227W"},
+	"32": {teamId:34, name: "NRG Stadium", city: "Houston, TX", location: "29.6847N,95.4107W"}
 
 
 
